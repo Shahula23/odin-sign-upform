@@ -1,0 +1,167 @@
+@font-face {
+    font-family: "norseBold";
+    src: url("Norse-Bold.otf");
+}
+
+html, body {
+    margin: 0; 
+    display: flex;
+    background-color: 	rgb(240,240,240);
+}
+
+.background-image {
+    background-image: url("halie-west-25xggax4bSA-unsplash.jpg"); 
+    height: 100vh;
+    width: 33vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo-bar {
+    width: 33vw;
+    height: 80px;
+    position: relative;
+    top: 20%;
+    background: rgba(0, 0, 0, 0.5);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-family: "norseBold";
+    color: white;
+    align-self: center;
+    padding-top: 25px;
+    font-size: 75px;
+}
+
+p {
+    color: white;
+    width: 33vw;
+    position: absolute;
+    bottom: 0; 
+    text-align: center;
+    font-size: 15px;
+    font-family: "arial";
+}
+
+a {
+    color: white;
+}
+
+.top-right {
+    width: 64%;
+    height: 33%;
+    background-color: 	rgb(240,240,240);
+    padding-left: 40px;
+    font-family: "arial";
+}
+
+.long-text {
+    color: black;
+    top: 7%;
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+    width: 48%;
+    height: 15%;
+}
+
+.short-text {
+    color: black;
+    top: 22%;
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+    height: 10%;
+}
+
+legend {
+    padding-left: 30px;
+    padding-top: 20px;
+    font-family: arial;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: white;
+}
+
+.form-left, .form-right {
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+input {
+    display: block;
+    border: 1px solid #E5E7EB;
+    border-radius: 3px;
+    width: 300px;
+    height: 25px;
+    margin-bottom: 15px;
+}
+
+.form-container {
+    display: flex;
+    width: 67vw;
+    background-color: white;
+    box-shadow: 0px 5px 5px 0px gray;
+    padding-bottom: 15px;
+    background-color: white;
+}
+
+label {
+    font-size: 15px;
+    font-family: arial;
+    font-weight: bold;
+}
+
+.form-submit {
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+.submit {
+    background-color: #596D48;
+    border-radius: 5px;
+    color: white;
+    font-family: arial;
+    font-weight: bold;
+    width: 160px;
+    height: 35px;
+}
+
+.account {
+    font-size: 15px;
+    font-family: arial;
+    color: black;
+    text-align: left;
+    padding-bottom: 5px;
+    position: static;
+}
+
+.log-in {
+    font-size: 15px;
+    font-family: arial;
+    color: #596D48;
+}
+
+input:invalid {
+    border: red solid 1px;
+}
+
+:focus {
+    border-color: blue;
+    box-shadow: 0 0 10px #9ecaed;
+    outline: none;
+}
+
+.error {
+    border-color: red;
+}
+
+#message {
+    position: relative;
+    bottom: 15px;
+    font-family: arial;
+}

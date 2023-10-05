@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="left">
+        <div class="background-image">
+        <div class="logo-bar">
+            <img class="logo" src="odin-lined.png" alt="Odin Logo">
+            <h1>ODIN<h1>
+        </div>
+        </div>
+        <p>Photo by <a href="https://unsplash.com/@haliewestphoto" target="_blank">Halie West
+        </a> on<a href="https://unsplash.com" target="_blank"> Unsplash</a></p>
+    </div>
+    <div class="right">
+        <div class="top-right">
+            <p class="long-text">This is not a real online service! You know you need something
+                like this in your life to help you realise your deepest dreams.
+                Sign up <em>now</em> to get started.
+            </p>
+            <p class="short-text">You <em>know</em> you want to.</p>
+        </div>
+        <form>
+            <legend>Let's do this!</legend>
+            <div class="form-container">
+                <div class="form-left">
+                    <label for="first-name">FIRST NAME</label>
+                    <input type="text" id="first-name" tabindex="1" placeholder="Thor" required>
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" tabindex="3" required placeholder="thorodinson@theodinproject.com">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" onkeyup='check();' tabindex="5" required>
+                    <div id="message"></div>
+                </div>
+                <div class="form-right">
+                    <label for="last-name">LAST NAME</label>
+                    <input type="text" id="last-name" tabindex="2" placeholder="Odinson" required>
+                    <label for="phone-number">PHONE NUMBER</label>
+                    <input type="tel" id="phone-number" tabindex="4" pattern='^\+?\d{0,13}' required>
+                    <label for="cnfrm_password">CONFIRM PASSWORD</label>
+                    <input type="password" id="cnfrm_password" onkeyup='check();' tabindex="6" required>
+                </div>
+            </div>
+            <div class="form-submit">
+                <input type="submit" class="submit" id="form-submit" value="Create Account" disabled="true">
+                <p class="account">Already have an account? <span class="log-in">Log in</span></p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
